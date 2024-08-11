@@ -1,11 +1,10 @@
-resource "github_repository" "devstation" {
-  name        = "devstation"
-  description = "Gentoo workstation setup and configuration"
-  topics      = ["ansible"]
+resource "github_repository" "infra" {
+  name        = "infra"
+  description = "Infra as a code"
 
   visibility = "public"
 
-  has_issues      = true
+  has_issues      = false
   has_discussions = true
   has_projects    = true
   has_wiki        = true
