@@ -24,7 +24,7 @@ resource "github_repository" "system" {
 resource "github_repository" "hashistack" {
   name        = "ansible-hashistack"
   description = "Ansible collection to setup HashiStack"
-  topics      = [
+  topics = [
     "ansible",
     "hashicorp",
     "nomad",
