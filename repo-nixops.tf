@@ -1,12 +1,11 @@
-resource "github_repository" "infra" {
-  name        = "infra"
-  description = "Infra as a code"
-
-  topics      = ["self-hosting", "k8s-at-home"]
+resource "github_repository" "nixops" {
+  name        = "nixops"
+  description = "nix configs for servers"
+  topics      = ["nixos", "gitops", "proxmox"]
 
   visibility = "public"
 
-  has_issues      = true
+  has_issues      = false
   has_discussions = true
   has_projects    = false
   has_wiki        = true
